@@ -20,5 +20,7 @@ Route::get('/where', function () { //где найти
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\tovar::class, 'about']); //о нас
+Route::get('/catalog', [App\Http\Controllers\tovar::class, 'catalog']); //о нас
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

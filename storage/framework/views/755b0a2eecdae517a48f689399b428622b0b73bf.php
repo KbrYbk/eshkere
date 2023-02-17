@@ -35,7 +35,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item"><a href="<?php echo e(url('/')); ?>" class="nav-link">О нас</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Каталог</a></li>
+                        <li class="nav-item"><a href="<?php echo e(url('/catalog')); ?>" class="nav-link">Каталог</a></li>
                         <li class="nav-item"><a href="<?php echo e(url('/where')); ?>" class="nav-link">Где нас найти?</a></li>
                     </ul>
 
