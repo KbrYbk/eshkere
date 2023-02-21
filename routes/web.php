@@ -13,14 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/where', function () { //где найти
-    return view('where');
-});
+// Route::get('/where', function () { //где найти
+//     return view('where');
+// });
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/', [App\Http\Controllers\tovar::class, 'about']); //о нас
-Route::get('/catalog', [App\Http\Controllers\tovar::class, 'catalog']); //о нас
+Route::get('/studenty', [App\Http\Controllers\Studentys::class, 'stud']);
+// Route::get('/trugames', [App\Http\Controllers\tovar::class, 'about']); //о нас
+// Route::get('/catalog', [App\Http\Controllers\tovar::class, 'catalog']); //каталог
 
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
